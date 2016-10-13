@@ -17,7 +17,7 @@ class TestBasics(unittest.TestCase):
 		self.assertEqual(2, result)
 	def test_expo(self):
 		result = rpn.calculate("2 3 ^")
-		self.assertEqual(2, result)
+		self.assertEqual(8, result)
 	def test_badstring(self):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +")
